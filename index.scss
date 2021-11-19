@@ -319,6 +319,54 @@ footer {
     }
   }
 }
+section.featured-posts-section {
+  background: #edf7fa;
+  margin: 20px 0px;
+  padding: 20px 50px;
+  .featured-posts__title {
+    font-size: 19px;
+    padding: 10px;
+    text-align: start;
+  }
+  .featured-posts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .each-posts {
+      width: 300px;
+      height: 300px;
+      padding: 20px;
+      padding-top: 30px;
+      background: white;
+      border-radius: 8px;
+
+      .post-title {
+        font-size: 17px;
+        color: $Primary;
+        margin-bottom: 20px;
+        display: block;
+      }
+      .post__line {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: $Dark;
+        margin-bottom: 10px;
+      }
+      .post-subtitle {
+        color: $Dark;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
 @keyframes navHover {
   10% {
     color: lighten($Primary, 25);
